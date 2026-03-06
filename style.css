@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  background: #0f1b21;
+  text-align: center;
+}
+
+#title {
+  margin-top: 50px;
+  color: white;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title span {
+  color: #26ffcb;
+  padding-right: 15px;
+}
+
+.reset {
+  width: 250px;
+  height: 100px;
+  border: transparent;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background: #1f3540;
+  font-size: 26px;
+  color: #26ffcb;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.board-container {
+  width: 564px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-row {
+    display: flex;
+    justify-content: center;
+}
+
+.square {
+  height: 120px;
+  width: 120px;
+  background: #1f3540;
+  border: 4px solid #0f1b21;
+  border-radius: 12px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.symbol {
+  font-size: 90px;
+  font-weight: bold;
+  animation: pop 0.2s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+.x {
+  color: #26ffcb;
+}
+
+.o {
+  color: #ff4d4d;
+}
+
+.turn {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.turn span {
+  color: #26ffcb;
+  font-weight: bold;
+}
+
+.winner {
+  color: #26ffcb;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.draw {
+  color: #ffcc00;
+  font-size: 30px;
+  margin-bottom: 20px;
+}

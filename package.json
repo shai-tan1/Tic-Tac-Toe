@@ -1,0 +1,37 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "This is a Tic-Tac-Toe Game",
+  "keywords": [
+    "Tic",
+    "Tac",
+    "Toe",
+    "Game",
+    "App"
+  ],
+  "homepage": "https://github.com/Thrillant/Tic-Tac-Toe#readme",
+  "bugs": {
+    "url": "https://github.com/Thrillant/Tic-Tac-Toe/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thrillant/Tic-Tac-Toe.git"
+  },
+  "license": "ISC",
+  "author": "Suvodip",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "just"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.1"
+  }
+}
