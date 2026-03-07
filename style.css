@@ -2,15 +2,28 @@ body {
   margin: 0;
   background: #0f1b21;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 #title {
   margin-top: 50px;
   color: white;
   font-size: 60px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  #title {
+    font-size: 40px;
+  }
 }
 
 #title span {
@@ -41,8 +54,8 @@ body {
 }
 
 .board-row {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .square {
@@ -65,8 +78,12 @@ body {
 }
 
 @keyframes pop {
-  0% { transform: scale(0); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .x {
