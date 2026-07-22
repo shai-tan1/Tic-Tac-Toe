@@ -42,3 +42,4 @@ To deploy:
 1. Import the repository into Vercel.
 2. Vercel will automatically detect the Parcel framework.
 3. Ensure the Build Command is set to `npm run build` and the Output Directory is `dist`.
+4. also deploy in vercel
